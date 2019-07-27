@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href='https://api.mapbox.com/mapbox-gl-js/v1.0.0/mapbox-gl.css' rel='stylesheet' />
+    <link rel='stylesheet' href='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.4.1/mapbox-gl-geocoder.css' type='text/css' />
+  </head>
+  <body>
+    <ul id="list_cr">
+
+    </ul>
+
+    <div id='map'>
+      <h1 id="head">Click on any country to check most famous artists , you can also check data source and choose wikpedia , you can also listen to good track from this country by click play ,<p style="color:red;"> Please click play on the player</p></h1>
+              <select id="wiki">
+                
+  <option onchange="switch()"value="pop">Popnable version</option>
+  <option value="wik" onchange="switch()">Wikipedia version</option>
+  
+</select>
+<iframe id="music" scrolling="no" frameborder="0" allowTransparency="true" src="https://www.deezer.com/plugins/player?format=classic&autoplay=true&playlist=true&width=400&height=100&color=ff0000&layout=dark&size=medium&type=tracks&id=81102882&app_id=1" width="400" height="100"></iframe>
+
+    </div>
+    
+
+    <script src='https://api.mapbox.com/mapbox-gl-js/v1.0.0/mapbox-gl.js'></script>
+    <script src="https://e-cdns-files.dzcdn.net/js/min/dz.js"></script>
+    <script src='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.4.1/mapbox-gl-geocoder.min.js'></script>
+    <script src="https://apis.google.com/js/api.js"></script>
+    <script src="crawler.js"></script>
+    <script src="script.js"></script>
+    
+
+  </body>
+</html>
